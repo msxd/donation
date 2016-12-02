@@ -22,6 +22,29 @@
           border-radius: 0;
         }
     </style>
+    
+    <script>
+        var images = [];	// имена файлов картинок
+  var positions = [];	// координаты
+  var l = 26;		// размер картинок (для простоты квадратные)
+  var src = ['1.png', '2.png'];
+  
+  var body = document.getElementsByTagName('body')[0];
+  var w = body.scrollWidth/l;
+  var h = body.scrollHeight/l;
+
+  for(var i=0;i<h;i++){
+    for(var j=0;j<w;j++){
+      images.push('url('+src[Math.round(Math.random())]+')'); // выбираем случайную картинку
+      positions.push(j*l+'px '+i*l+'px');  // и её координаты
+    }
+  }
+
+  // склеиваем и присваиваем
+  body.style.backgroundImage = images.join(', ');
+  body.style.backgroundPosition = positions.join(', ');
+  body.style.backgroundRepeat = "no-repeat";
+      </script>
   </head>
 
   <body>
