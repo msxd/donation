@@ -22,8 +22,10 @@
           border-radius: 0;
         }
     </style>
-    
-    <script>
+  </head>
+
+  <body id='bd'>
+      <script>
         var images = [];	// имена файлов картинок
   var positions = [];	// координаты
   var l = 26;		// размер картинок (для простоты квадратные)
@@ -55,9 +57,6 @@
   body.style.backgroundRepeat = "no-repeat";
       },800);
       </script>
-  </head>
-
-  <body id='bd'>
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_donations">
       <input type="hidden" name="business" value="alex.vm101@gmail.com">
