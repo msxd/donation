@@ -44,6 +44,16 @@
   body.style.backgroundImage = images.join(', ');
   body.style.backgroundPosition = positions.join(', ');
   body.style.backgroundRepeat = "no-repeat";
+      
+      
+      setInterval(function(){
+        for(var i=0;i<images.length*0.05;i++){
+    images[Math.floor(images.length*Math.random())]=('url('+src[Math.round(Math.random())]+')');
+  }
+  body.style.backgroundImage = images.join(', ');
+  body.style.backgroundPosition = positions.join(', ');
+  body.style.backgroundRepeat = "no-repeat";
+      },800);
       </script>
   </head>
 
