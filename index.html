@@ -29,7 +29,7 @@
   var l = 26;		// размер картинок (для простоты квадратные)
   var src = ['1.png', '2.png'];
   
-  var body = document.getElementsByTagName('body')[0];
+  var body = document.getElementById('bd');
   var w = body.scrollWidth/l;
   var h = body.scrollHeight/l;
 
@@ -57,7 +57,7 @@
       </script>
   </head>
 
-  <body>
+  <body id='bd'>
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_donations">
       <input type="hidden" name="business" value="alex.vm101@gmail.com">
